@@ -1,0 +1,11 @@
+name: github-ci-deep
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  assurance:
+    uses: gomaja/github-ci/.github/workflows/deep.yml@99280a17ab17ef58a7f2de16bf715fc27fed2e5c

@@ -1,0 +1,17 @@
+name: github-ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    permissions:
+      contents: read
+      security-events: write
+    uses: gomaja/github-ci/.github/workflows/go.yml@99280a17ab17ef58a7f2de16bf715fc27fed2e5c
