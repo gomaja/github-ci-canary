@@ -1,6 +1,8 @@
 name: github-ci-deep
 
 on:
+  schedule:
+    - cron: "23 3 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -8,4 +10,4 @@ permissions:
 
 jobs:
   assurance:
-    uses: gomaja/github-ci/.github/workflows/deep.yml@99280a17ab17ef58a7f2de16bf715fc27fed2e5c
+    uses: gomaja/github-ci/.github/workflows/deep.yml@6a742aa3770677e3e15799fa83dd5ce5911d8612

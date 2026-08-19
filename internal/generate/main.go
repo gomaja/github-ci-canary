@@ -16,8 +16,13 @@ const Model = "schema-2"
 `
 
 func main() {
+	os.Exit(run())
+}
+
+func run() int {
 	if err := os.WriteFile("generated/model.go", []byte(generatedModel), 0o600); err != nil {
 		_, _ = fmt.Fprintln(os.Stderr, err)
-		os.Exit(1)
+		return 1
 	}
+	return 0
 }
