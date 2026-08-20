@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   assurance:
-    uses: gomaja/github-ci/.github/workflows/deep.yml@6a742aa3770677e3e15799fa83dd5ce5911d8612
+    uses: gomaja/github-ci/.github/workflows/deep.yml@f04332730350ca8fa3729fd6e077a4445266045c
