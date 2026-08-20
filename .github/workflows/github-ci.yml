@@ -14,4 +14,4 @@ jobs:
     permissions:
       contents: read
       security-events: write  # CodeQL publishes results evaluated by the reusable gate.
-    uses: gomaja/github-ci/.github/workflows/go.yml@f04332730350ca8fa3729fd6e077a4445266045c
+    uses: gomaja/github-ci/.github/workflows/go.yml@f5d26f58210ae8219d74ee3d91109ece1809801b
